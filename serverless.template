@@ -16,11 +16,18 @@
           "AWSLambdaBasicExecutionRole"
         ],
         "Events": {
-          "RootGet": {
+          "ProxyResource": {
             "Type": "Api",
             "Properties": {
-              "Path": "/",
-              "Method": "GET"
+              "Path": "/{proxy+}",
+              "Method": "ANY"
+            }
+          },
+          "RootResource": {
+            "Type": "Api",
+            "Properties" : {
+             "Path" : "/",
+              "Method" : "ANY"
             }
           }
         }
