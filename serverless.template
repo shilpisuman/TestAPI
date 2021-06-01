@@ -8,7 +8,7 @@
       "Properties": {
         "Handler": "TestAPI::TestAPI.Functions::Get",
         "Runtime": "dotnetcore3.1",
-        "CodeUri": "",
+        "CodeUri": "./TestAPI",
         "MemorySize": 256,
         "Timeout": 30,
         "Role": null,
